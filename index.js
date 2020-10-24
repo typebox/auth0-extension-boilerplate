@@ -4,8 +4,9 @@ var Webtask  = require('webtask-tools');
 var app      = express();
 var metadata = require('./webtask.json');
 
-app.get('/login', function (req, res) {
-  console.log(req.query.returnTo);
+
+app.use((req, res, next) => {
+  console.log(req;
   next();
 });
 
